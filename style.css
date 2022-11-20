@@ -4,10 +4,13 @@ body {
 }
 
 main {
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #ffffff;
   border-radius: 25px;
-  margin: 5%;
-  height: 90%;
+  width: fit-content;
 }
 
 header {
@@ -35,15 +38,44 @@ li {
 }
 
 .titre {
-  font-size: 2.5em;
+  font-size: 3.5em;
+  position: relative;
   color: #000000;
-  z-index: 1;
+  z-index: 6;
+  margin-bottom: 5px;
 }
 
 .soustitre {
-  font-size: 2, 5em;
+  margin-top: 5px;
+  position: relative;
+  font-size: 2.5em;
   color: #000000;
+  z-index: 6;
+}
+
+.introtxt {
+  margin-left: 5%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#intropizza {
+  display: flex;
+  height: auto;
+}
+
+.introblanc {
+  position: absolute;
+
+  z-index: 4;
+  object-fit: cover;
+}
+.intropizza {
   z-index: 2;
+  height: 99%;
+
 }
 
 .btn-orange {
@@ -51,7 +83,7 @@ li {
   color: #ffffff;
   border-radius: 50px;
   padding: 10px;
-  width: 45%;
+  width: 75%;
 }
 
 .center {
@@ -63,23 +95,18 @@ li {
 .premiere {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .intropizza {
   justify-content: right;
   align-items: center;
-  margin: 0 5% 0 5%;
-}
-
-#menu {
-
 }
 
 .menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: 10%;
-  margin: 0 10px;
+  justify-content: center;
+  padding: 0 10px;
   justify-content: center;
   width: 100%;
 }
@@ -90,25 +117,28 @@ li {
   align-items: center;
   justify-content: center;
   margin: 0 10px;
-  width: 30%;
-  height: 40%;
-  margin-bottom: 4em;
+  width: 25%;
+
+  margin-bottom: 2em;
+  border: solid 1px #ccc;
+  padding: 10px;
+  border-radius: 100px 100px 0 0;
 }
 
-.menu-item>img {
+.menu-item > img {
   width: 50%;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .ingredient {
-  font-size: small;
+  font-size: smaller;
   text-align: center;
-  width: 50%;
+  width: 80%;
 }
 
 select {
-  width: 50%;
+  width: 80%;
   height: 30px;
   margin-bottom: 10px;
   border-radius: 50px;
@@ -121,6 +151,43 @@ select {
 
 .prix {
   font-size: 1.5em;
-  color: #05A84B;
+  color: #05a84b;
   font-weight: bold;
+}
+
+#feuillehaut{
+  position: relative;
+  margin-left: 50%;
+  margin-top: -2%;
+  z-index: 10;
+  width: 10%;
+  margin-bottom: 0px;
+}
+
+#feuillecote{
+  position: absolute;
+  margin-left: -10%;
+  z-index: 10;
+  width: 20%;
+}
+
+#tomatecote{
+  position: absolute;
+  margin-left: 49%;
+  margin-top: -6%;
+  
+}
+
+#tomatebas{
+  position: absolute;
+  margin-left: -5%;
+  margin-top: -6%;
+  z-index: -1;
+  
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
 }
