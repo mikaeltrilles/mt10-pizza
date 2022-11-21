@@ -84,6 +84,8 @@ li {
   border-radius: 50px;
   padding: 10px;
   width: 75%;
+  text-align: center;
+  text-decoration: none;
 }
 
 .center {
